@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://js.jirengu.com
+
+Copyright (c) 2017 by TryingWhatYouWant (http://js.jirengu.com/pikij/15/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="作业：最简单的页面-完成版1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale:1.0">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+*{
+  padding: 0;
+  margin:0;
+  box-sizing:border-box;
+
+}
+body{
+  font-family: 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;
+}
+.container{
+  max-width:960px;
+  margin:30px auto;
+}
+.header{
+ /*background:url(https://ooo.0o0.ooo/2017/05/15/591996690c40a.jpg) no-repeat;*/
+ background:url(//i.loli.net/2017/10/09/59dadf0b9c587.jpg) no-repeat;
+  background-size:100% 100%;
+  text-align:center;
+  padding-bottom:5px;
+}
+.header>img{
+  height:73px;
+  width:73px;
+  border-radius:50%;
+  background-color: #d8d8d8;
+  margin-top:54px;
+  margin-bottom:40px;
+}
+.header>p{
+  max-width:640px;
+  margin:0 auto 30px auto;
+}
+
+p span.sp{
+  float:left;
+  width:128px;
+  height:24px;
+  background-color: #d8d8d8;
+  margin-left:16px;
+  margin-right:16px;
+  text-align:center;
+  border-radius:8px;
+  padding:2px;
+}
+
+p::after{
+  content:'';
+  display:block;
+  clear:both;
+}
+
+section.fs{
+  background-color: #efefef;
+  min-height:319px;
+  padding-top:5px;
+  padding-bottom:2px;
+  /* border:1px solid red; */
+  text-align:center;
+}
+
+section.fs div.fs_d1{
+  max-width:6em;
+  min-height:40px;
+  background-color: #d8d8d8;
+  border-radius:14px;
+  margin-top:70px;
+  margin-left:auto;
+  margin-right:auto;
+  line-height:40px;
+}
+section.fs div.fs_d2{
+  max-width:18em;
+  min-height:24px;
+  background-color: #e8e8e8;
+  border-radius:14px;
+  margin-top:35px;
+  margin-left:auto;
+  margin-right:auto;
+}
+section.fs div.fs_d3{
+  max-width:18em;
+  min-height:24px;
+  background-color: #e8e8e8;
+  border-radius:14px;
+  margin-top:19px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:100px;
+}
+section.main{
+  background-color: #fff;
+  padding-top:10px;
+  max-width:960px;
+  margin-left:auto;
+  margin-right:auto;
+  /* border:1px solid black; */
+ 
+}
+section.main div{
+  float:left;
+
+ margin-left:16px;
+  margin-right:16px;
+  margin-top:32px;
+}
+section.main::after{
+  content:'';
+  display:block;
+  clear:both;
+}
+section.main div img{
+  height:181px;
+  width:288px;
+  background-color: #d8d8d8;
+  border-radius:4px;
+}
+section.main div p:first-of-type{
+  /*width:204px;*/
+  /*height:24px;*/
+  /*background-color: #bcbcbc;*/
+  /*background-color: #f4d313;*/
+  /*border-radius:4px;*/
+  margin-top:19px;
+  margin-bottom:14px;
+  font-size:1em;
+}
+section.main div p:last-of-type{
+  /*width:288px;*/
+  /*height:16px;*/
+  /*background-color: #ececec;*/
+  /*border-radius:4px;*/
+  color:#acacac;
+  font-size:0.8em;
+}
+@media(min-width:1440px){
+  .container{
+    max-width:1440px;
+  }
+}
+@media(max-width:959px){
+  .main_d7,.main_d8,.main_d9{
+    display:none;
+  }
+  section.main{
+    max-width:640px;
+  }
+}
+@media(max-width:639px){
+  .container{
+    margin:0 auto;
+  }
+  .main_d6{
+    display:none;
+  }
+  .header>p{
+    max-width:320px;
+  }
+  p span.sp:nth-of-type(3){
+    margin-top:24px;
+  }
+   p span.sp:nth-of-type(4){
+    margin-top:24px;
+  }
+  section.main{
+    max-width:320px;
+  }
+}
+@media(max-width:319px){
+  .container{
+    margin:0 auto;
+  }
+  .header p{
+    max-width:160px;
+  }
+  .header p span:nth-child(2){
+    margin-top:24px;
+  }
+}
+
+
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <section class="header">
+      <!--<img src="https://ooo.0o0.ooo/2017/05/15/591989a31fc5d.jpg" alt="名将图">-->
+      <img src="//i.loli.net/2017/10/09/59dade1fef584.jpg" alt="名将图">
+      <p>
+        <span class="sp">国士无双</span>
+        <span class="sp">金戈铁马</span>
+        <span class="sp">百战百胜</span>
+        <span class="sp">精忠报国</span>
+      </p>
+    </section>
+    <section class="fs">
+      <div class="fs_d1">己亥岁-曹松</div>
+      <div class="fs_d2">泽国江山入战图， 生民何计乐樵苏。</div>
+      <div class="fs_d3">凭君莫话封侯事， 一将功成万骨枯。</div>
+    </section>
+    <section class="main">
+      <div class="main_d1">
+        <img src="https://ooo.0o0.ooo/2017/05/15/5919938a4b1c7.jpg" alt="孙武">
+        <p>孙武</p>
+        <p>观诸兵书，无出孙武</p>
+      </div>
+      <div class="main_d2">
+        <img src="https://ooo.0o0.ooo/2017/05/15/591993c645592.jpg" alt="吴起">
+        <p>吴起</p>
+        <p>七万之众，天下莫当</p>
+      </div>
+      <div class="main_d3">
+        <img src="https://ooo.0o0.ooo/2017/05/15/59199166cc08d.jpg" alt="韩信">
+        <p>韩信</p>
+        <p>功高无二，略不世出</p>
+      </div>
+      <div class="main_d4">
+        <img src="//i.loli.net/2017/10/09/59dadd4164fa0.jpg" alt="白起">
+        <p>白起</p>
+        <p>料敌合变，出奇无穷</p>
+      </div>
+      <div class="main_d5">
+        <img src="https://ooo.0o0.ooo/2017/05/15/591992d8b917b.jpg" alt="李靖">
+        <p>李靖</p>
+        <p>南定荆扬，北清沙塞</p>
+      </div>
+      <div class="main_d6">
+        <img src="https://ooo.0o0.ooo/2017/05/15/5919934cad8c0.jpg" alt="岳飞">
+        <p>岳飞</p>
+        <p>谋定后战，有胜无败</p>
+      </div>
+      <div class="main_d7">
+        <img src="https://i.loli.net/2017/10/09/59dadb84954c1.jpg" alt="徐达">
+        <p>徐达</p>
+        <p>持重有谋，功高不伐</p>
+      </div>
+      <div class="main_d8">
+        <img src="//i.loli.net/2017/10/09/59dadc43465e6.jpg" alt="卫青">
+        <p>卫青</p>
+        <p>天生将材，社稷之卫</p>
+      </div>
+      <div class="main_d9">
+        <img src="https://ooo.0o0.ooo/2017/05/15/5919951866785.jpg" alt="霍去病">
+        <p>霍去病</p>
+        <p>匈奴未灭，何以家为</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
